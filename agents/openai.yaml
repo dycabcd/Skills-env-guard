@@ -1,0 +1,5 @@
+interface:
+  description: Validate and run project-local dependency, build, browser, and container commands.
+  invocation:
+    mode: automatic
+    requires_approval: false

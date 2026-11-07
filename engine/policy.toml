@@ -1,0 +1,36 @@
+version = 1
+
+[project]
+root_env = "ENVGUARD_PROJECT_ROOT"
+
+[network]
+allowed_hosts = [
+  "localhost",
+  "127.0.0.1",
+  "::1",
+]
+# Example:
+# allowed_cidrs = ["192.168.0.0/16", "10.0.0.0/8"]
+allowed_cidrs = []
+
+[git]
+allowed_push_remotes = []
+
+[maven]
+allow_install = false
+
+[sensitive_paths]
+exceptions = [
+  ".env.example",
+  "package-lock.json",
+  "pnpm-lock.yaml",
+  "poetry.lock",
+  "uv.lock",
+  "requirements.txt",
+  "migrations/*.sql",
+  "tests/**/*.db",
+  "tests/*.db",
+  "fixtures/**/*.db",
+  "fixtures/*.db",
+  "data/*.db",
+]

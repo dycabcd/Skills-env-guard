@@ -1,0 +1,9 @@
+# env-guard for Trae
+
+1. Keep the project root as the only write boundary.
+2. Use `python engine/guard.py inspect -- <command argv>` before uncertain commands.
+3. Use `python engine/guard.py run -- <command argv>` to execute an allowlisted command.
+4. Do not pass shell syntax, pipes, redirection, or command substitution to the guard.
+5. Do not run `sudo`, global package installation, destructive commands, Docker mutations, external upload commands, or commands with paths outside the project root.
+6. `check` is read-only; `init` creates only `.venv/`, `node_modules/`, `.browsers/`, `.cache/`, and `.gitignore` entries.
+7. Never create or use an escape hatch for a blocked command.

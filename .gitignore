@@ -1,0 +1,30 @@
+# Python 运行产生的字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境（如果你以后在 env-guard 里面建了 venv）
+.venv/
+venv/
+env/
+ENV/
+
+# 临时目录和文件
+.tmp/
+*.log
+*.bak
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 环境变量文件（千万不能传，哪怕里面没密码）
+.env
+.env.local
+
+# IDE 配置文件
+.vscode/
+.idea/
+
+# 打包产物
+*.zip
