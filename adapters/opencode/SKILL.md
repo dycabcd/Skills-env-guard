@@ -1,5 +1,5 @@
 ---
-name: env-guard
+name: opencode-env-guard
 description: Enforce project-local command execution for dependency, build, browser, and container tools.
 license: MIT
 metadata:
